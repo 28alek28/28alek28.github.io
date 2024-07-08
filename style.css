@@ -1,0 +1,40 @@
+body {
+    background-color: white;
+    color:black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    font-size: 200px;
+    top: 20%;
+}
+
+
+#bouge{
+    width:100px;
+    height: 120px;
+    background-image: url('bouge.png'); 
+    background-size: contain;
+    position: absolute;
+/*    animation: alek 10s infinite linear;*/
+}
+
+/*@keyframes alek {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(70vw, 50vh);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+*/
