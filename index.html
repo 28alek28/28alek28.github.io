@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1S style="font-family: Arial, sans-serif">IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII</h1>
+    <div id="bouge"></div>
+    <script> 
+
+
+
+let left_offset = 0;
+let top_offset = 0;
+document.onkeydown = function (event) {
+  let img = document.getElementById("bouge");
+  switch (event.keyCode) {
+    case 37:
+      // Move left
+      left_offset -= 20;
+      break;
+    case 38:
+      // Move up
+      top_offset -= 20;
+      break;
+    case 39:
+      // Move right
+      left_offset += 20;
+      break;
+    case 40:
+      // Move down
+      top_offset += 20;
+      break;
+  }
+  img.style.left = `${left_offset}px`;
+  img.style.top = `${top_offset}px`;
+};
+
+
+
+    </script>
+</body>
+</html>
